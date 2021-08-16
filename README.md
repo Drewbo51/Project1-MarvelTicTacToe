@@ -28,6 +28,6 @@ Giphy API 2 - http://api.giphy.com/v1/gifs/search?q=sad&api_key=6CLhov4T4L7uKTCX
 
 # Screenshots
 
-![](assets/Marvel%20Tic%20Tac%20Toe%20Before.png)
+![](Marvel%20Tic%20Tac%20Toe%20Before.png)
 
-![](assets/Marvel%20Tic%20Tac%20Toe%20After.png)
+![](Marvel%20Tic%20Tac%20Toe%20After.png)
