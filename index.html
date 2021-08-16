@@ -1,24 +1,25 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Marvel Tic-Tac-Toe</title>
- 
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css">
-    <link rel="stylesheet" href="style.css">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, intial-scale=1.0" />
+        <title>Marvel Tic Tac Toe</title>
 
-   
-</head>
-<body>
+        <!-- Bulma  -->
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css"> 
+        <link rel="stylesheet" href="stylep1.css"/>
+    </head>
+    <body>
 
+        
 
-    <h1>Marvel Tic Tac Toe</h1>
+        <!-- Header Jumbotron -->
+        <h1>Marvel Tic Tac Toe</h1>
+        <!-- Meme Container -->
+        <div class="meme"></div>
 
-
-    <div class="meme"></div>
-
+        <!-- TicTacToe Grid -->
         <div class="container">
             <div class="gridItem" id="grid1"></div>
             <div class="gridItem" id="grid2"></div>
@@ -30,14 +31,18 @@
             <div class="gridItem" id="grid8"></div>
             <div class="gridItem" id="grid9"></div>
         </div>
-
+        <!-- Player/Opponent Turn -->
         <div class="result-info">
-                <!-- <p id="result">Turn: X</p> -->
+            
+            <!-- Restart Button -->
             <button id="restart">Play Again</button>
         </div>
+        <!-- JQuery Script -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 
-<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-<script src="script.js"></script>
-    
-</body>
+        <!-- Marvel Script -->
+        <script src="scriptp1.js"></script>
+
+      
+    </body>
 </html>
