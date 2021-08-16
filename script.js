@@ -1,6 +1,7 @@
 var booleanForWinLoss = false;
-    var queryURL = "http://api.giphy.com/v1/gifs/search?q=happy&api_key=6CLhov4T4L7uKTCXMMoSiz0FEzEaz1lf&limit=10";
-    var queryURL2 = "http://api.giphy.com/v1/gifs/search?q=sad&api_key=6CLhov4T4L7uKTCXMMoSiz0FEzEaz1lf&limit=10";
+var apiKey = "6CLhov4T4L7uKTCXMMoSiz0FEzEaz1lf";
+    var queryURL = "https://api.giphy.com/v1/gifs/search?q=happy&api_key=" + apiKey + "&limit=10";
+    var queryURL2 = "https://api.giphy.com/v1/gifs/search?q=sad&api_key=" + apiKey + "&limit=10";
 
 
 var player1 = "X";
