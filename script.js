@@ -1,4 +1,4 @@
-// Booleon for Win/Loss
+// Booleon for Win/Loss. Toggles on or off 
 var booleanForWinLoss = false;
 
 // API Key for Giphy
