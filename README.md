@@ -17,7 +17,7 @@ SO that I can enjoy my time with other people.
 
 # Resources
 
-Github - https://github.com/jasminewong8/Project1
+Github - https://drewbo51.github.io/Project1-MarvelTicTacToe/
 
 Bulma - https://bulma.io/
 

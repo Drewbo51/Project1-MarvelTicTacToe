@@ -1,11 +1,20 @@
+// Booleon for Win/Loss
 var booleanForWinLoss = false;
+
+// API Key for Giphy
 var apiKey = "6CLhov4T4L7uKTCXMMoSiz0FEzEaz1lf";
+
+// Link for Giphy API Happy
     var queryURL = "https://api.giphy.com/v1/gifs/search?q=happy&api_key=" + apiKey + "&limit=10";
+    
+// Link for Giphy Sad    
     var queryURL2 = "https://api.giphy.com/v1/gifs/search?q=sad&api_key=" + apiKey + "&limit=10";
 
-
+// PLayer 1 and Player 2
 var player1 = "X";
 var player2 = "O";
+
+// Game Grid
 var grid1 = $("#grid1");
 var grid2 = $("#grid2");
 var grid3 = $("#grid3");
@@ -15,9 +24,15 @@ var grid6 = $("#grid6");
 var grid7 = $("#grid7");
 var grid8 = $("#grid8");
 var grid9 = $("#grid9");
+
+// Player 2 AI spot picker
 var computerPlace;
+
+// Gid location
 var computerChoices = [grid1, grid2, grid3, grid4, grid5, grid6, grid7, grid8, grid9];
 
+
+// Tile 1
 $("#grid1").on("click", function() {
     if (booleanForWinLoss) {
         return;
@@ -37,6 +52,7 @@ $("#grid1").on("click", function() {
     checkForLoss();
 });
 
+// Tile 2
 $("#grid2").on("click", function() {
     if (booleanForWinLoss) {
         return;
@@ -56,6 +72,8 @@ $("#grid2").on("click", function() {
     checkForLoss();
 });
 
+
+// Tile 3
 $("#grid3").on("click", function() {
     if (booleanForWinLoss) {
         return;
@@ -75,6 +93,8 @@ $("#grid3").on("click", function() {
     checkForLoss();
 });
 
+
+// Tile 4
 $("#grid4").on("click", function() {
     if (booleanForWinLoss) {
         return;
@@ -94,6 +114,7 @@ $("#grid4").on("click", function() {
     checkForLoss();
 });
 
+// Tile 5
 $("#grid5").on("click", function() {
     if (booleanForWinLoss) {
         return;
@@ -113,6 +134,7 @@ $("#grid5").on("click", function() {
     checkForLoss();
 });
 
+// Tile 6
 $("#grid6").on("click", function() {
     if (booleanForWinLoss) {
         return;
@@ -132,6 +154,7 @@ $("#grid6").on("click", function() {
     checkForLoss();
 });
 
+// Tile 7
 $("#grid7").on("click", function() {
     if (booleanForWinLoss) {
         return;
@@ -151,6 +174,7 @@ $("#grid7").on("click", function() {
     checkForLoss();
 });
 
+// Tile 8
 $("#grid8").on("click", function() {
     if (booleanForWinLoss) {
         return;
@@ -170,6 +194,7 @@ $("#grid8").on("click", function() {
     checkForLoss();
 });
 
+// Tile 9
 $("#grid9").on("click", function() {
     if (booleanForWinLoss) {
         return;
@@ -189,6 +214,7 @@ $("#grid9").on("click", function() {
     checkForLoss();
 });
 
+// Play Again Button
 $("#restart").on("click", function() {
     $(".gridItem").empty();
     $(".meme").empty();
@@ -199,6 +225,7 @@ $("#restart").on("click", function() {
     }
 });
 
+// Check for win
 function checkForWin() {
     var grid1value = grid1.attr("value");
     var grid2value = grid2.attr("value");
@@ -238,6 +265,7 @@ function checkForWin() {
 
 }
 
+// Check for loss
 function checkForLoss() {
     var grid1value = grid1.attr("value");
     var grid2value = grid2.attr("value");
